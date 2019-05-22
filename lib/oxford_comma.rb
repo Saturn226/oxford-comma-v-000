@@ -1,5 +1,7 @@
 def oxford_comma(array)
-  array << "and "array.pop()
+  if array.length == 2 
+    array << "and "array.pop()
+  end
   array.join(" ")
   
 end
